@@ -1,0 +1,3 @@
+[submodule "note_study_tool"]
+	path = note_study_tool
+	url = https://github.com/Corm/note_study_tool.git
