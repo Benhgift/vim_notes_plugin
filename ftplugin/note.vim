@@ -1,8 +1,8 @@
-let s:port = 0
+let s:port = "cat butt"
 
 function! Start_notes_server()
-    echo "test"
-    let s:port = system(python python_server ." ". bufname("%"))
+    let s:port = system('python pyclient.py' ." -S ". bufname("%"))
+    call append(0, [s:port])
 endfunction
 
 function! Close_notes_server()
